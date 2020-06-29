@@ -9,11 +9,12 @@ with open('african_countries.csv', 'r') as csvfile:
     for i in range(10):
         print(f"What is the capital of {states_and_caps[i][0]}")
         answer = input().lower()
-        if answer == states_and_caps[i][1].lower().strip():
-            print("correct")
+        if answer == states_and_caps[i][1].lower().strip(): 
+            print(f"{answer} is correct")
             score+=1
-        elif (answer != states_and_caps[i][1][:].lower().strip()):
-          print('Wrong')
+        elif (answer != states_and_caps[i][1].lower().strip()):
+          print(
+              f"{answer} is Wrong, the correct answer is { states_and_caps[i][1]}")
     else:
       print(f'Your score is {score}')
 
